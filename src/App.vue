@@ -11,9 +11,9 @@ export default{
 </script>
 
 <template>
+  <h1>App</h1>
   <headerApp />
   <mainApp />
-  <h1>ciao</h1>
 </template>
 
 <style>
