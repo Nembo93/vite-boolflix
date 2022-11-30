@@ -1,4 +1,6 @@
 <script>
+import {store} from "./store.js";
+
 import headerApp from "./components/headerApp.vue";
 import mainApp from "./components/mainApp.vue";
 
@@ -11,7 +13,7 @@ export default{
 
   methods: {
     provabtn: function(){
-        console.log("Ciao") 
+        console.log(store.searchText) 
     }
   },
 

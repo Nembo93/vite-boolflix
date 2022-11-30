@@ -28,7 +28,7 @@ export default{
 
         <div>
             <input type="text" v-model="store.searchText">
-            <button @click="$emit(prova)">Cliccami</button>
+            <button @click="$emit(`prova`)">Cliccami</button>
         </div>
         
 
