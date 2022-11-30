@@ -9,8 +9,14 @@ export default{
             store,
         };
     },
-};
 
+    // Funzione bottone search
+    methods:{
+    prova: function(){
+        console.log(store.searchText)
+        }
+    },
+};
 
 </script>
 
@@ -22,7 +28,7 @@ export default{
 
         <div>
             <input type="text" v-model="store.searchText">
-            <button>Cliccami</button>
+            <button @click="prova">Cliccami</button>
         </div>
         
 
