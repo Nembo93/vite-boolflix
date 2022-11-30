@@ -1,11 +1,12 @@
 <script>
-import {"mainApp"} from "./mainApp";
+import { mainApp } from "./components/mainApp.vue";
 </script>
 
 <template>
-  
+  <mainApp/>
+  <h1>ciao</h1>
 </template>
 
-<style scoped>
+<style>
 
 </style>
