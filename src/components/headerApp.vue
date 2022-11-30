@@ -11,11 +11,11 @@ export default{
     },
 
     // Funzione bottone search
-    methods:{
-    prova: function(){
-        console.log(store.searchText)
-        }
-    },
+    // methods:{
+    // prova: function(){
+    //     console.log(store.searchText)
+    //     }
+    // },
 };
 
 </script>
@@ -28,7 +28,7 @@ export default{
 
         <div>
             <input type="text" v-model="store.searchText">
-            <button @click="prova">Cliccami</button>
+            <button @click="$emit(prova)">Cliccami</button>
         </div>
         
 

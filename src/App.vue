@@ -7,12 +7,19 @@ export default{
     headerApp,
     mainApp
   },
+
+  methods: {
+    provabtn: function(){
+        console.log("Ciao") 
+    }
+  },
+
 };
 </script>
 
 <template>
   <h1>App</h1>
-  <headerApp />
+  <headerApp @prova="provabtn" />
   <mainApp />
 </template>
 
