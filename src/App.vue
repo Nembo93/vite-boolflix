@@ -8,6 +8,7 @@ export default{
     mainApp
   },
 
+
   methods: {
     provabtn: function(){
         console.log("Ciao") 
