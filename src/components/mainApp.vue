@@ -27,7 +27,6 @@ export default {
 .film_container{
     margin: auto;
     width: 400px;
-    height: 1000px;
     background-color: aqua;
 }
 </style>
