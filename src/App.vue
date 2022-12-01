@@ -11,18 +11,18 @@ export default{
   },
 
 
-  methods: {
-    provabtn: function(){
-        console.log(store.searchText) 
-    }
-  },
+  // methods: {
+  //   provabtn: function(){
+  //       console.log(store.searchText) 
+  //   }
+  // },
 
 };
 </script>
 
 <template>
   <h1>App</h1>
-  <headerApp @prova="provabtn" />
+  <headerApp />
   <mainApp />
 </template>
 

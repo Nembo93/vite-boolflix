@@ -1,6 +1,7 @@
 <script>
 // File importati in headerApp.vue
 import { store } from "../store.js";
+import axios from "axios";
 // Esportazione del file headerApp
 export default{
     name: "headerApp",
@@ -11,13 +12,23 @@ export default{
     },
 
     // Funzione bottone search
-    // methods:{
-    // prova: function(){
-    //     console.log(store.searchText)
-    //     }
-    // },
-};
+    methods:{
+    prova: function(){
+        console.log(store.searchText)
+        console.log(store.characters)
+        },
+    },
 
+    mounted() {
+        axios
+            .get('https://www.breakingbadapi.com/api/characters')
+            .then((response) => {
+            this.store.characters = response.data;
+            console.log(store.characters)
+            })
+        }
+    
+};
 </script>
 
 <template>
@@ -28,10 +39,8 @@ export default{
 
         <div>
             <input type="text" v-model="store.searchText">
-            <button @click="$emit(`prova`)">Cliccami</button>
+            <button @click="prova">Cliccami</button>
         </div>
-        
-
     </header>
 </template>
 
