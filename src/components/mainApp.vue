@@ -17,7 +17,9 @@ export default {
 
 <template>
     <div class="film_container">
-        <FilmApp v-for="character in store.characters"/>
+        <FilmApp v-for="character in store.characters"
+        :info="character"/>
+        <h2>prova</h2>
     </div>
 </template>
 
