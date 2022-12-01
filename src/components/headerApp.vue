@@ -25,7 +25,7 @@ export default{
                 },
             })
             .then((response) => {
-            this.store.characters = response.data;
+            this.store.characters = response.data.results;
             console.log(store.characters)
             })
         }
