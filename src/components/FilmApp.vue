@@ -20,8 +20,7 @@ export default{
         <h4>{{info.original_title}}</h4>
         <h5>{{info.original_language}}</h5>
         <h6>{{info.vote_average}}</h6>
-    </div>
-    
+    </div>    
 </template>
 
 <style>

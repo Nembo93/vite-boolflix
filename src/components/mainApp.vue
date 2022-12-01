@@ -20,6 +20,7 @@ export default {
         <FilmApp v-for="character in store.characters"
         :info="character"/>
         <h2>prova</h2>
+        <h1>prova2</h1>
     </div>
 </template>
 
