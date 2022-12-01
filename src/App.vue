@@ -8,14 +8,14 @@ export default{
   components: {
     headerApp,
     mainApp
+    },
+
+    data (){
+      return{
+        store,
+      };
+
   },
-
-
-  // methods: {
-  //   provabtn: function(){
-  //       console.log(store.searchText) 
-  //   }
-  // },
 
 };
 </script>

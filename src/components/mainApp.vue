@@ -6,6 +6,7 @@ export default {
     data (){
         return{
             store,
+            msg: "ciao",
         };
     },
 
@@ -13,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <h1>main</h1>
+    <!-- <div v-for="character in store.characters">{{}}</div> -->
 </template>
 
 <style>

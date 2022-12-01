@@ -13,6 +13,7 @@ export default{
 
     // Funzione bottone search
     methods:{
+
     prova: function(){
         console.log(store.searchText)
 
@@ -28,23 +29,9 @@ export default{
             this.store.characters = response.data.results;
             console.log(store.characters)
             })
+
         }
     },
-
-    // mounted() {
-    //     axios
-    //         .get('https://api.themoviedb.org/3/search/movie', {
-    //             params: {
-    //                 api_key: "071cb57202acff2ed1f9abd198110e68",
-    //                 query: store.searchText,
-    //                 language: "it-IT",
-    //             },
-    //         })
-    //         .then((response) => {
-    //         this.store.characters = response.data;
-    //         console.log(store.characters)
-    //         })
-    //     }
     
 };
 </script>
