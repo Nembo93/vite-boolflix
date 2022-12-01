@@ -8,12 +8,13 @@ export default {
             store,
         };
     },
-
+    
 };
 </script>
 
 <template>
-    <div v-for="character in store.characters">{{store.charachter}}</div>
+    <div v-for="character in store.characters">{{`ciao`}}</div>
+    <h2>prova</h2>
 </template>
 
 <style>

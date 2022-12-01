@@ -29,6 +29,7 @@ export default{
             .then((response) => {
             this.store.characters = response.data.results;
             console.log(store.characters)
+            console.log(response)
             })
 
         }
