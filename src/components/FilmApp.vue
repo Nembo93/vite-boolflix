@@ -43,7 +43,8 @@ export default{
     height: 278px;
     text-align: center;
     padding: 10px;
-    background-color: red;
+    background-color: black;
+    color: white;
     border: 2px solid black;
     position: absolute;
     bottom: 0%;
@@ -51,6 +52,7 @@ export default{
 }
 .film_img:hover .film_card{
     display: block;
+    /* filter: brightness(50%); */
 }
 .poster_image{
     display: block;
