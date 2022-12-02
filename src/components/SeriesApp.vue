@@ -1,10 +1,13 @@
 <script>
 import { store } from '../store';
-
+import CountryFlag from 'vue-country-flag-next'
 export default{
     name : "SeriesApp",
     props:{
         info: Object,
+    },
+    components:{
+        CountryFlag,
     },
     data (){
         return{

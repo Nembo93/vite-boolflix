@@ -1,10 +1,20 @@
 <script>
 import { store } from '../store';
-
+import CountryFlag from 'vue-country-flag-next'
 export default{
     name: "FilmApp",
     props: {
         info: Object,
+    },
+    components:{
+        CountryFlag,
+    },
+    methods: {
+        getFlag (lang){
+            if (lang=="en"){
+                return "gb"
+            }
+        }
     },
     data() {
         return {
@@ -30,6 +40,7 @@ export default{
                     <h3>{{info.title}}</h3>
                     <h4>{{info.original_title}}</h4>
                     <h5>{{info.original_language}}</h5>
+                    <country-flag :country="getFlag(info.original_language)" size="medium"/>
                     <h6>{{vote}}</h6>
                     <div>
                         <span v-for="n in vote"><i class="fa-solid fa-star"></i></span>
