@@ -11,6 +11,12 @@ export default{
             store
         };
     },
+
+    computed: {
+        vote() {
+            return Math.ceil(this.info.vote_average / 2);    
+        },
+    },
 }
 </script>
 
@@ -23,7 +29,7 @@ export default{
             <h3>{{info.name}}</h3>
             <h4>{{info.original_name}}</h4>
             <h5>{{info.original_language}}</h5>
-            <h6>{{info.vote_average}}</h6>
+            <h6>{{vote}}</h6>
         </div>  
     </div>      
 </template>

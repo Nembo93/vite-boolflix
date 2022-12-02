@@ -1,17 +1,26 @@
 <script>
 import { store } from '../store';
-
+import VoteApp from './voteApp.vue';
+import voteApp from './voteApp.vue';
 export default{
-    name : "FilmApp",
-    props:{
+    name: "FilmApp",
+    props: {
         info: Object,
     },
-    data (){
-        return{
-            store
+    data() {
+        return {
+            store,
         };
     },
+    computed: {
+        vote() {
+            return Math.ceil(this.info.vote_average / 2);
+        },
+    },
+    components: { VoteApp }
 }
+
+    
 </script>
 
 <template>
@@ -22,7 +31,12 @@ export default{
                 <h3>{{info.title}}</h3>
                 <h4>{{info.original_title}}</h4>
                 <h5>{{info.original_language}}</h5>
-                <h6>{{info.vote_average}}</h6>
+                <h6>{{vote}}</h6>
+                <div>
+                    <span v-for="n in vote"><i class="fa-solid fa-star"></i></span>
+                    <span v-for="n in (5 - vote)"><i class="fa-regular fa-star"></i></span>
+                </div>
+                
         </div>
         </div>
           
@@ -48,7 +62,7 @@ export default{
     border: 2px solid black;
     position: absolute;
     bottom: 0%;
-    display: none;
+    /* display: none; */
 }
 .film_img:hover .film_card{
     display: block;
