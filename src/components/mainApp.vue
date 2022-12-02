@@ -18,22 +18,24 @@ export default {
 </script>
 
 <template>
-    <div class="film_container">
-        <FilmApp v-for="character in store.characters"
-        :info="character"/>
-        <h2>prova</h2>
-        <h1>prova2</h1>
+    <div>
+        <h2>Film</h2>
+        <div class="container">
+            <FilmApp v-for="character in store.characters"
+            :info="character"/>
+        </div>
+        <h2>Serie TV</h2>
+        <div class="container">
+            <SeriesApp v-for="serie in store.series"
+            :info="serie"/>
+        </div>
     </div>
 
-    <div class="series_container">
-        <h2>Serie TV</h2>
-        <SeriesApp v-for="serie in store.series"
-        :info="serie"/>
-    </div>
+    
 </template>
 
 <style>
-.film_container{
+.container{
     margin: auto;
     background-color: aqua;
     padding: 30px;
