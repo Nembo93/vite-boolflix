@@ -8,7 +8,8 @@ export default{
     data(){
         return{
             store,
-            characters:[]
+            characters:[],
+            series:[]
         };
     },
 
@@ -17,6 +18,20 @@ export default{
 
     prova: function(){
         console.log(store.searchText)
+
+        axios
+            .get('https://api.themoviedb.org/3/search/tv', {
+                params: {
+                    api_key: "071cb57202acff2ed1f9abd198110e68",
+                    query: store.searchText,
+                    language: "it-IT",
+                },
+            })
+            .then((response) => {
+            this.store.series = response.data.results;
+            console.log(store.series)
+            console.log(response)
+            })
 
         axios
             .get('https://api.themoviedb.org/3/search/movie', {
