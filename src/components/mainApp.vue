@@ -36,6 +36,9 @@ export default {
 .film_container{
     margin: auto;
     background-color: aqua;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .series_container{
     margin: auto;
