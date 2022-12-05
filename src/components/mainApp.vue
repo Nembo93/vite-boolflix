@@ -37,13 +37,16 @@ export default {
 <style>
 .container{
     margin: auto;
-    background-color: aqua;
-    padding: 30px;
+    background-color: gray;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
 }
 .series_container{
     margin: auto;
     background-color: yellow;
+}
+h2{
+    margin-left: 50px;
 }
 </style>

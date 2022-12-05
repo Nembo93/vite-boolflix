@@ -21,7 +21,6 @@ export default{
 </script>
 
 <template>
-  <h1>App</h1>
   <headerApp />
   <mainApp />
 </template>
