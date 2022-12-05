@@ -56,15 +56,24 @@ export default{
 <template>
     <header>
         <div>
-            <h1>Boolflix</h1>
+            <h1>BOOLFLIX</h1>
         </div>
 
         <div>
-            <input type="text" v-model="store.searchText">
-            <button @click="prova">Cliccami</button>
+            <input type="text" placeholder="Film/Serie TV" v-model="store.searchText">
+            <button @click="prova">Cerca</button>
         </div>
     </header>
 </template>
 
 <style>
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    color: red;
+}
 </style>

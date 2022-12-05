@@ -40,7 +40,7 @@ export default{
                     <h3>{{info.title}}</h3>
                     <h4>{{info.original_title}}</h4>
                     <h5>{{info.original_language}}</h5>
-                    <country-flag :country="getFlag(info.original_language)" size="medium"/>
+                    <country-flag :country="getFlag(info.original_language)" size="normal"/>
                     <h6>{{vote}}</h6>
                     <div>
                         <span v-for="n in vote"><i class="fa-solid fa-star"></i></span>
